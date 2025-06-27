@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>In-Browser Code Editor</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/theme/material.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/addon/lint/lint.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/htmlmixed/htmlmixed.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/xml/xml.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/javascript/javascript.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/css/css.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/addon/edit/closetag.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/addon/edit/closebrackets.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.14.9/beautify.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.14.9/beautify-html.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.14.9/beautify-css.min.js"></script>
+
+</head>
+
+
+<body>
+  <header>🧪 In-Browser Code Editor</header>
+
+  <div class="tabs">
+    <div class="tab active">HTML</div>
+    <div class="tab">CSS</div>
+    <div class="tab">JavaScript</div>
+    <button id="run">▶ Run</button>
+    <button id="themeToggle">🌙 Toggle Theme</button>
+    <button id="beautify">✨ Beautify Code</button>
+
+  </div>
+
+  <div class="editor-area">
+    <div class="editor-container">
+      <div id="htmlWrap" class="editor-wrapper active"><textarea id="htmlEditor"></textarea></div>
+      <div id="cssWrap" class="editor-wrapper"><textarea id="cssEditor"></textarea></div>
+      <div id="jsWrap" class="editor-wrapper"><textarea id="jsEditor"></textarea></div>
+    </div>
+    <iframe id="output"></iframe>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
