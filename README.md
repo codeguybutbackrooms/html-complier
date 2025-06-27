@@ -13,8 +13,6 @@ The HTML Complier... To run code, you must have a complier 🥰
 <h3>Bugs Fixed</h3>
 <ul>
   <li>JavaScript cannot type in</li>
-  <li>Banana</li>
-  <li>Orange</li>
 </ul>
 <h3>Shortcuts</h3>
 
