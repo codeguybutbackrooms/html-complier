@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #1e1e1e;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  background: #333;
+  padding: 10px 20px;
+  font-size: 1.2em;
+}
+
+.tabs {
+  display: flex;
+  background: #2c2c2c;
+}
+
+.tab {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  background: #2c2c2c;
+  border-bottom: 2px solid transparent;
+  user-select: none;
+}
+
+.tab.active {
+  background: #1e1e1e;
+  border-bottom: 2px solid #0af;
+}
+
+#run {
+  background: #0af;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+body.light {
+  background: #f5f5f5;
+  color: #222;
+}
+
+body.light .tabs {
+  background: #ddd;
+}
+
+body.light .tab {
+  background: #ddd;
+  color: black;
+}
+
+body.light .tab.active {
+  background: white;
+  border-bottom: 2px solid #0af;
+}
+
+body.light header {
+  background: #ccc;
+  color: #111;
+}
+
+.editor-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.editor-container {
+  flex: 1;
+  position: relative;
+}
+
+.editor-wrapper {
+  display: none;
+  height: 100%;
+}
+
+.editor-wrapper.active {
+  display: block;
+}
+
+textarea {
+  height: 100%;
+  width: 100%;
+}
+
+.CodeMirror {
+  height: 100%;
+  font-size: 14px;
+}
+
+iframe {
+  width: 100%;
+  height: 40vh;
+  border: none;
+  background:white;
+}
