@@ -1,8 +1,8 @@
-# HTML Complier
-The HTML Complier... To run code, you must have a complier 🥰
+# HTML Compiler
+The HTML Compiler... To run code, you must have a compiler 🥰
 <h3>Main Features</h3>
 <ul>
-  <li>HTML Complier</li>
+  <li>HTML Compiler</li>
   <li>Can Split Files</li>
   <li>Autocorrect/Error Checking</li>
   <li>Auto-closing tags supported</li>
